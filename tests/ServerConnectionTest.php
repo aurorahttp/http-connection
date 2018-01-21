@@ -39,8 +39,8 @@ class ServerConnectionTest extends TestCase
 
     public function testGetPort()
     {
-        $server = new ServerConnection('127.0.0.1', $this->getPort());
-        $this->assertEquals(10000, $server->getPort());
+        $server = new ServerConnection('127.0.0.1', $port = $this->getPort());
+        $this->assertEquals($port, $server->getPort());
     }
 
     private function getPort()
