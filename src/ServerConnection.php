@@ -4,7 +4,7 @@ namespace Aurora\Http\Connection;
 
 use InvalidArgumentException;
 
-class Server
+class ServerConnection implements ServerConnectionInterface
 {
     const PORT_NUMBER_MIN = 1;
     const PORT_NUMBER_MAX = 65535;

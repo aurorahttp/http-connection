@@ -2,10 +2,8 @@
 
 namespace Aurora\Http\Connection;
 
-interface ServerInterface
+interface ServerConnectionInterface
 {
-    public function open();
-
     public function close();
 
     public function accept();

@@ -5,7 +5,7 @@ namespace Aurora\Http\Connection;
 use Aurora\Http\Connection\Client\RateTrait;
 use Aurora\Http\Connection\Client\TimeTrait;
 
-class Client implements ClientInterface
+class ClientConnection implements ClientConnectionInterface
 {
     use TimeTrait, RateTrait;
     /**

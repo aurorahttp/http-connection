@@ -2,7 +2,7 @@
 
 namespace Aurora\Http\Connection;
 
-interface ClientInterface
+interface ClientConnectionInterface
 {
     const KEEL_ALIVE = 'keep-alive';
     const HTTP_PERSISTENT = '1.1';
