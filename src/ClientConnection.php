@@ -73,7 +73,7 @@ class ClientConnection implements ClientConnectionInterface
      * @param int $length
      * @return int
      */
-    public function write($content, $length = 0)
+    public function write($content, $length = null)
     {
         $now = time();
         $this->writeCount += $writtenLength = fwrite($this->socket, $content, $length);
