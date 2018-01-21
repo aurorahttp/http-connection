@@ -2,11 +2,7 @@
 
 namespace Aurora\Http\Connection;
 
-interface ServerConnectionInterface
+interface ServerConnectionInterface extends ConnectionInterface
 {
-    public function close();
-
     public function accept();
-
-    public function getSocket();
 }

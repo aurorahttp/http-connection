@@ -2,7 +2,7 @@
 
 namespace Aurora\Http\Connection;
 
-interface ClientConnectionInterface
+interface ClientConnectionInterface extends ConnectionInterface
 {
     const KEEL_ALIVE = 'keep-alive';
     const HTTP_PERSISTENT = '1.1';
@@ -16,6 +16,4 @@ interface ClientConnectionInterface
     public function write($content, $length = 0);
 
     public function send($content);
-
-    public function getSocket();
 }
