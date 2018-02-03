@@ -1,5 +1,7 @@
 <?php
 
+namespace Aurora\Http\Connection\Tests;
+
 use Aurora\Http\Connection\ServerConnection;
 use PHPUnit\Framework\TestCase;
 
